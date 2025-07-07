@@ -22,6 +22,7 @@ export default function CalendlyButton({
     return () => document.head.removeChild(script)
   }, [])
 
+
   const handleClick = () => {
     if (window.Calendly) {
       window.Calendly.initPopupWidget({

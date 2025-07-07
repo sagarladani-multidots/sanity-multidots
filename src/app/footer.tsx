@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { FOOTER_QUERY } from '@/sanity/lib/queries';
 import { sanityFetch } from '@/sanity/lib/live';
 import Script from 'next/script';
+import CalendlyButton from "@/components/blocks/CalendlyButton";
 
 
 
@@ -56,9 +57,10 @@ export default async function Footer() {
                             <a href={`mailto:${email}`}>{email}</a></p>}
 
                         {scheduleMeetingUrl && (
-                            <a href={scheduleMeetingUrl} className="footer-schedule-link">
-                                {scheduleMeetingTitle || 'Schedule a Meeting'}
-                            </a>
+                            // <a href={scheduleMeetingUrl} className="footer-schedule-link">
+                            //     {scheduleMeetingTitle || 'Schedule a Meeting'}
+                            // </a>
+                             <CalendlyButton url={scheduleMeetingUrl} text={scheduleMeetingTitle} />
                         )}
                     </div>
 

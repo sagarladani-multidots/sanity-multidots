@@ -5,7 +5,7 @@
 .image-text-section-main .image-text-section-details{margin:55px 0 0 0;display:flex;gap:40px;align-items:center;}
 .image-text-section-main .image-text-section-content{max-width:400px;flex-shrink:0;}
 .image-text-section-main .image-text-section-content .image-text-section-description p{margin:0 0 30px 0;}
-.image-text-section-main .image-text-section-content .image-text-section-button .image-text-section-button-text{background:#0B1014;border-radius:8px;color:#FFF;font-size:18px;line-height:100%;text-align:center;padding:18px 30px;display:table;text-decoration:none;}
+.image-text-section-main .image-text-section-content .image-text-section-button .image-text-section-button-text{background:#0B1014;border-radius:8px;color:#FFF;font-size:18px;line-height:100%;text-align:center;padding:18px 30px;display:table;text-decoration:none;cursor: pointer;}
 @media only screen and (max-width:1024px){
     .image-text-section-main{margin:80px 0;}
 	.image-text-section-main .image-text-section-title{margin:0 0 15px;}

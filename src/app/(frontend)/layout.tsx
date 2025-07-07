@@ -32,7 +32,6 @@ export default async function FrontendLayout({
         <meta name="description" content={pageDescription} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:title" content={pageTitle} />

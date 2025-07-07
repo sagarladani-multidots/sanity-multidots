@@ -21,7 +21,7 @@ export default function CalendlyButton({
     document.head.appendChild(script)
     return () => document.head.removeChild(script)
   }, [])
-  
+
 
   const handleClick = () => {
     if (window.Calendly) {

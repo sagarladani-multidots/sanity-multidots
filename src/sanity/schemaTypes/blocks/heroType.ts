@@ -15,6 +15,14 @@ export const heroType = defineType({
         },
     ],
     fields: [
+        // add subtitle
+        defineField({
+            name: "subtitle",
+            type: "string",
+            title: "Subtitle",
+            description: "Subtitle for the Hero section",
+            group: "content",
+        }),
         defineField({
             name: "text",
             type: "blockContent",

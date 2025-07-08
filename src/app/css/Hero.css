@@ -1,4 +1,10 @@
 .hero-block-main{border:1px solid #AFAFAF;border-radius:20px;margin:0 auto 100px;max-width:1058px;}
+.hero-block-title{
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 100%;
+	letter-spacing: -2%;
+	text-align: center;	}
 .hero-block-border{border-bottom:1px solid #AFAFAF;padding:25px 20px;position:relative;}
 .hero-block-border::before{content:"";background-image:url(../images/dots-icon.svg);background-repeat:no-repeat;background-size:contain;width:40px;height:8px;position:absolute;top:20px;left:20px;}
 .hero-block-content{padding:80px 45px;}

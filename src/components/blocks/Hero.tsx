@@ -5,6 +5,7 @@ import type { TypedObject } from '@portabletext/types';
 
 type HeroBlockProps = {
   text?: TypedObject | TypedObject[];
+  subtitle?: string;
   backgroundColor?: string | { hex: string };
   textColor?: string | { hex: string };
   alignment?: 'left' | 'center' | 'right';
@@ -20,6 +21,7 @@ type HeroBlockProps = {
 
 export default function HeroBlock({
   text,
+  subtitle,
   backgroundColor,
   textColor,
   alignment = 'center',
@@ -44,6 +46,7 @@ export default function HeroBlock({
     >
       <div className='hero-block-border'></div>
       <div className="hero-block-content">
+        <p className='hero-block-subtitle'> {subtitle}</p>
         <PortableText value={text} />
       </div>
     </section>

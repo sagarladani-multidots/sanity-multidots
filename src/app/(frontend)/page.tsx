@@ -39,7 +39,9 @@ export async function generateMetadata({
   };
 
   if (page.homePage?.seo?.noIndex) {
-    metadata.robots = "noindex";
+    metadata.robots = "noindex, nofollow";
+  } else {
+    metadata.robots = "index, follow";
   }
 
   return metadata;

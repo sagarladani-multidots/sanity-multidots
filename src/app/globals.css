@@ -108,3 +108,19 @@ footer.site-footer .footer-bottom .footer-social-inner img{height:20px;width:aut
 }
 
 /* mobile css end */
+
+/* calendly popup css start */
+.calendly-overlay{z-index:99999!important;background-color:rgba(31,31,31,.9)!important}
+@media screen and (min-width:650px){
+	.calendly-overlay .calendly-popup-close{right:5%!important}
+}
+@media screen and (min-width:760px){
+	.calendly-overlay .calendly-popup-close{right:calc((100% - 670px)/2)!important}
+}
+@media screen and (min-width:801px){
+	.calendly-overlay .calendly-popup-close{top:60px!important;}
+}
+@media screen and (min-width:1250px){
+	.calendly-overlay .calendly-popup-close{right:calc((100% - 790px)/2)!important}
+}
+/* calendly popup css ed */

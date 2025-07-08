@@ -28,9 +28,9 @@ export default async function Header() {
                     )}
                 </div>
 
-                {sanityLogo && sanityLogo.url && (
+                {sanityLogo && (
                     <div className="header-sanity-logo">
-                        <Link href={sanityLogo.url}>
+                        <Link href={sanityLogo.url || '#'}>
                             <Image
                                 src={urlFor(sanityLogo).url()}
                                 alt={sanityLogo.alt || 'Sanity Logo'}

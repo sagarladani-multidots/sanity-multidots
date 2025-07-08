@@ -325,6 +325,7 @@ export type List = {
 
 export type Hero = {
   _type: "hero";
+  subtitle?: string;
   text?: Array<{
     children?: Array<{
       marks?: Array<string>;
@@ -975,6 +976,7 @@ export type HOME_PAGE_QUERYResult = {
     } | {
       _key: string;
       _type: "hero";
+      subtitle?: string;
       text?: Array<{
         children?: Array<{
           marks?: Array<string>;
@@ -1190,6 +1192,7 @@ export type PAGE_QUERYResult = {
     } | {
       _key: string;
       _type: "hero";
+      subtitle?: string;
       text?: Array<{
         children?: Array<{
           marks?: Array<string>;

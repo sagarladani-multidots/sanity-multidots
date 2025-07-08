@@ -40,9 +40,17 @@ export default function CTABlock({
         }
     }, []);
 
+    // Extend the Window interface to include Calendly
+    interface CalendlyWindow extends Window {
+        Calendly?: {
+            initPopupWidget: (options: { url: string }) => void;
+        };
+    }
+
     const handleCalendlyClick = () => {
-        if (button?.link && (window as any).Calendly) {
-            (window as any).Calendly.initPopupWidget({ url: button.link });
+        const calendlyWindow = window as CalendlyWindow;
+        if (button?.link && calendlyWindow.Calendly) {
+            calendlyWindow.Calendly.initPopupWidget({ url: button.link });
         } else {
             console.warn('Calendly script not yet loaded or invalid link');
         }

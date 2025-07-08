@@ -2,6 +2,14 @@
 
 import { useEffect, useState } from 'react'
 
+declare global {
+  interface Window {
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void
+    }
+  }
+}
+
 type CalendlyButtonProps = {
     url: string
     text?: string
@@ -19,7 +27,9 @@ export default function CalendlyButton({
     script.async = true
     script.onload = () => setLoaded(true)
     document.head.appendChild(script)
-    return () => document.head.removeChild(script)
+    return () => {
+      document.head.removeChild(script)
+    }
   }, [])
 
 
